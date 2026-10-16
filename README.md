@@ -117,3 +117,4 @@ La web **no se abre haciendo doble clic en `index.html`** (el navegador bloquea 
 1. Cambia el logo en `assets/img/` (`logo.png`, `favicon.png`, `apple-touch-icon.png`) y la imagen `assets/og.jpg`.
 2. Cambia los colores en `css/style.css` (variables `--navy`, `--yellow`, `--green` al principio del archivo).
 3. Cambia los textos de `data/` y, si hace falta, el nombre y las categorías.
+4. 
