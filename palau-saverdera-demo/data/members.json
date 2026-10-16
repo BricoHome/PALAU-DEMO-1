@@ -1,0 +1,26 @@
+[
+  {"id": "aficionat", "highlight": false, "price": "25 €",
+   "name": {"ca": "Soci aficionat", "es": "Socio aficionado"},
+   "period": {"ca": "a l'any", "es": "al año"},
+   "perks": [
+     {"ca": "Carnet de soci del club", "es": "Carnet de socio del club"},
+     {"ca": "Entrada als partits de casa", "es": "Entrada a los partidos en casa"},
+     {"ca": "Informació i novetats del club", "es": "Información y novedades del club"}
+   ]},
+  {"id": "familiar", "highlight": true, "price": "45 €",
+   "name": {"ca": "Soci familiar", "es": "Socio familiar"},
+   "period": {"ca": "a l'any", "es": "al año"},
+   "perks": [
+     {"ca": "Carnet per a tota la família", "es": "Carnet para toda la familia"},
+     {"ca": "Entrada als partits de casa", "es": "Entrada a los partidos en casa"},
+     {"ca": "Avantatges en activitats del club", "es": "Ventajas en actividades del club"}
+   ]},
+  {"id": "protector", "highlight": false, "price": "100 €",
+   "name": {"ca": "Soci protector", "es": "Socio protector"},
+   "period": {"ca": "a l'any", "es": "al año"},
+   "perks": [
+     {"ca": "Tot el del soci familiar", "es": "Todo lo del socio familiar"},
+     {"ca": "Reconeixement a la web del club", "es": "Reconocimiento en la web del club"},
+     {"ca": "Suport directe a la cantera", "es": "Apoyo directo a la cantera"}
+   ]}
+]

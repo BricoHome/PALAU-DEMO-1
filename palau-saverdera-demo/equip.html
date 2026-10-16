@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equip · Elit Futbol Club Palau-Saverdera</title>
+<meta name="description" content="Plantilla, calendari i classificació de l'equip.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#081b4b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elit Futbol Club Palau-Saverdera">
+<meta property="og:description" content="El futbol de Palau-saverdera · Des del 2018 · Web de demostració">
+<meta property="og:image" content="__SITE_URL__/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/barlow-condensed-latin-800-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/inter-latin-wght-normal.woff2">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="page-team">
+<a class="skip" href="#main" data-i18n="skip">Salta al contingut</a>
+<div id="chrome-header"></div>
+
+<main id="main">
+  <section class="team-hero">
+    <img class="crest" src="assets/img/logo.png" alt="" width="253" height="393">
+    <div class="wrap">
+      <a class="back" href="index.html#equips" data-i18n="team_back">Tornar als equips</a>
+      <h1 id="teamName">&nbsp;</h1>
+      <div class="team-meta" id="teamMeta"></div>
+    </div>
+  </section>
+
+  <section class="section navy-2" id="plantilla">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="squad_title">Plantilla</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+      </div>
+      <ul class="pc-grid" id="squadGrid"></ul>
+    </div>
+  </section>
+
+  <section class="section" id="calendari">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="cal_title">Calendari i resultats</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+      </div>
+      <div class="cal-cols">
+        <div class="cal-col" data-reveal><h3 data-i18n="cal_upcoming">Propers partits</h3><ul class="mlist" id="calUpcoming"></ul></div>
+        <div class="cal-col" data-reveal><h3 data-i18n="cal_results">Resultats</h3><ul class="mlist" id="calResults"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="classificacio">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="stand_title">Classificació</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+      </div>
+      <div class="tbl-wrap" data-reveal><table class="tbl" id="standTbl"></table></div>
+    </div>
+  </section>
+</main>
+
+<div id="chrome-footer"></div>
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

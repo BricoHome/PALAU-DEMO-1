@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elit Futbol Club Palau-Saverdera · Web de demostració</title>
+<meta name="description" content="Web de demostració del club de futbol de Palau-saverdera: equips, calendari, resultats, cantera i més.">
+<!-- Demo: no indexar. Treure aquesta línia quan la web sigui definitiva. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#081b4b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elit Futbol Club Palau-Saverdera">
+<meta property="og:description" content="El futbol de Palau-saverdera · Des del 2018 · Web de demostració">
+<meta property="og:image" content="__SITE_URL__/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/barlow-condensed-latin-800-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/inter-latin-wght-normal.woff2">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="page-home">
+<a class="skip" href="#main" data-i18n="skip">Salta al contingut</a>
+<div id="chrome-header"></div>
+
+<main id="main">
+  <!-- PORTADA -->
+  <section class="hero" id="inici">
+    <div class="hero-bg" data-parallax><div class="hero-img"></div></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Elit Futbol Club · Des del 2018</p>
+        <h1 class="hero-title" id="heroTitle" data-i18n="hero_title">El futbol de Palau-saverdera</h1>
+        <p class="hero-text" data-i18n="hero_text">Formació, esport i comunitat al voltant del nostre escut.</p>
+        <div class="hero-cta">
+          <a class="btn btn-yellow" href="#soci" data-i18n="hero_cta1">Fes-te soci</a>
+          <a class="btn btn-ghost" href="#cantera" data-i18n="hero_cta2">Inscripcions cantera</a>
+        </div>
+      </div>
+      <div class="hero-crest"><img src="assets/img/logo.png" alt="Escut de l'Elit Futbol Club Palau-Saverdera" width="253" height="393" fetchpriority="high"></div>
+    </div>
+    <a class="scroll-cue" href="#partits"><span data-i18n="scroll">Baixa</span><i></i></a>
+  </section>
+
+  <!-- PROPER PARTIT + ÚLTIM RESULTAT -->
+  <section class="section match-center" id="partits" aria-live="off">
+    <div class="wrap mc-grid" id="matchCenter"></div>
+  </section>
+
+  <!-- NOTÍCIES -->
+  <section class="section" id="noticies">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="news_title">Notícies</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="news_sub"></p>
+      </div>
+      <div class="news-grid" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTADORS -->
+  <section class="stats" id="stats" aria-label="Xifres del club">
+    <div class="wrap stats-grid" id="statsGrid"></div>
+  </section>
+
+  <!-- EQUIPS -->
+  <section class="section soft" id="equips">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="teams_title">Equips</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="teams_sub"></p>
+      </div>
+      <div class="teams-grid" id="teamsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PLANTILLA -->
+  <section class="section navy-2" id="plantilla">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="squad_title">Plantilla</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="squad_sub"></p>
+      </div>
+      <div class="squad-top" data-reveal>
+        <div class="chips" id="squadChips" role="group" aria-label="Equips"></div>
+        <div class="car-btns">
+          <button class="car-btn" id="carPrev" aria-label="Anterior" type="button">←</button>
+          <button class="car-btn" id="carNext" aria-label="Següent" type="button">→</button>
+        </div>
+      </div>
+      <div class="carousel-wrap"><ul class="carousel" id="squadCarousel" tabindex="0"></ul></div>
+    </div>
+  </section>
+
+  <!-- CALENDARI I RESULTATS -->
+  <section class="section" id="calendari">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="cal_title">Calendari i resultats</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="cal_sub"></p>
+      </div>
+      <div class="chips" id="calChips" role="group" aria-label="Equips" data-reveal></div>
+      <div class="cal-cols">
+        <div class="cal-col" data-reveal><h3 data-i18n="cal_upcoming">Propers partits</h3><ul class="mlist" id="calUpcoming"></ul></div>
+        <div class="cal-col" data-reveal><h3 data-i18n="cal_results">Resultats</h3><ul class="mlist" id="calResults"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSIFICACIÓ -->
+  <section class="section soft" id="classificacio">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="stand_title">Classificació</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="stand_sub"></p>
+      </div>
+      <div class="stand-top" data-reveal>
+        <label class="sr-only" for="standSel" data-i18n="teams_title">Equips</label>
+        <select class="sel" id="standSel"></select>
+      </div>
+      <div class="tbl-wrap" data-reveal><table class="tbl" id="standTbl"></table></div>
+    </div>
+  </section>
+
+  <!-- CANTERA -->
+  <section class="section navy on-dark" id="cantera">
+    <div class="wrap youth-grid">
+      <div class="youth-copy" data-reveal>
+        <div class="sec-head" style="margin-bottom:1.4rem"><h2 data-i18n="youth_title">Cantera</h2></div>
+        <p style="font-size:1.25rem;color:#fff;font-weight:600;margin-bottom:.8rem" data-i18n="youth_sub"></p>
+        <p data-i18n="youth_text"></p>
+        <h3 data-i18n="youth_cats">Categories</h3>
+        <div class="pills" id="youthPills"></div>
+      </div>
+      <div class="form-card" data-reveal>
+        <form name="cantera" id="youthForm" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="cantera">
+          <p class="hp"><label>No omplir <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="form-grid">
+            <div class="field full"><label for="f_name" data-i18n="f_name">Nom</label><input id="f_name" name="jugador" required autocomplete="off"></div>
+            <div class="field"><label for="f_birth" data-i18n="f_birth">Naixement</label><input id="f_birth" name="naixement" type="date" required></div>
+            <div class="field"><label for="f_team" data-i18n="f_team">Categoria</label><select id="f_team" name="categoria" required></select></div>
+            <div class="field full"><label for="f_parent" data-i18n="f_parent">Tutor</label><input id="f_parent" name="tutor" required autocomplete="name"></div>
+            <div class="field"><label for="f_phone" data-i18n="f_phone">Telèfon</label><input id="f_phone" name="telefon" type="tel" required autocomplete="tel"></div>
+            <div class="field"><label for="f_email" data-i18n="f_email">Correu</label><input id="f_email" name="email" type="email" required autocomplete="email"></div>
+            <div class="field full"><label for="f_msg" data-i18n="f_msg">Comentaris</label><textarea id="f_msg" name="comentaris"></textarea></div>
+            <label class="check full"><input type="checkbox" name="privacitat" required><span data-i18n="f_privacy"></span></label>
+          </div>
+          <button class="btn btn-yellow" type="submit" id="youthSend" data-i18n="f_send">Enviar inscripció</button>
+          <div class="form-msg" id="youthMsg" role="status" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATROCINADORS -->
+  <section class="section" id="patrocinadors">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="sponsors_title">Patrocinadors</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="sponsors_sub"></p>
+      </div>
+      <div class="sp-grid" id="spGrid"></div>
+      <p class="sp-cta" data-reveal><a class="link-arrow" id="spCta" href="#contacte" data-i18n="sponsors_cta"></a></p>
+    </div>
+  </section>
+
+  <!-- FES-TE SOCI -->
+  <section class="section navy-2 on-dark" id="soci">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="member_title">Fes-te soci</span><span class="demo-tag" data-demo data-i18n="demo_tag"></span></h2>
+        <p data-i18n="member_sub"></p>
+      </div>
+      <div class="tiers" id="tiers"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTE -->
+  <section class="section" id="contacte">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <h2><span data-i18n="contact_title">Contacte</span></h2>
+        <p data-i18n="contact_sub"></p>
+      </div>
+      <div class="contact-grid">
+        <div data-reveal>
+          <div class="clist" id="contactList"></div>
+          <div class="cbtns" id="contactBtns"></div>
+        </div>
+        <div class="map" data-reveal id="mapBox"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="chrome-footer"></div>
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

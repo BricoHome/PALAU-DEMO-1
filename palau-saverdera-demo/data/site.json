@@ -1,0 +1,21 @@
+{
+  "demoMode": true,
+  "name": "Elit Futbol Club Palau-Saverdera",
+  "shortName": "EFC Palau-Saverdera",
+  "founded": 2018,
+  "featuredTeam": "senior",
+  "heroImage": "",
+  "address": "Avinguda Mas Oriol, 24 · 17495 Palau-saverdera (Girona)",
+  "mapQuery": "Avinguda Mas Oriol 24, Palau-saverdera",
+  "mapCenter": { "lat": 42.3075, "lon": 3.1480 },
+  "phone": "600 000 000",
+  "whatsapp": "34600000000",
+  "email": "info@exemple.cat",
+  "social": {
+    "facebook": "https://www.facebook.com/EFCPalauSaverdera/",
+    "instagram": "",
+    "x": "",
+    "youtube": ""
+  },
+  "_notes": "phone, whatsapp i email son EJEMPLO: substituir pels reals. 'demoMode': true mostra l'avís de demostració i les etiquetes EXEMPLE; posa false quan les dades siguin reals. 'heroImage': ruta d'una foto, p. ex. assets/img/portada.jpg."
+}

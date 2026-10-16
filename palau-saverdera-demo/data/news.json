@@ -1,0 +1,18 @@
+[
+  {"id": 1, "date": "2026-10-12", "image": "",
+   "tag": {"ca": "Primer equip", "es": "Primer equipo"},
+   "title": {"ca": "Crònica del partit [EXEMPLE]", "es": "Crónica del partido [EJEMPLO]"},
+   "excerpt": {"ca": "Aquí anirà el resum del darrer partit: com ha anat, qui ha marcat i què ens espera la propera jornada.", "es": "Aquí irá el resumen del último partido: cómo ha ido, quién ha marcado y qué nos espera la próxima jornada."}},
+  {"id": 2, "date": "2026-10-08", "image": "",
+   "tag": {"ca": "Cantera", "es": "Cantera"},
+   "title": {"ca": "Inscripcions obertes a la cantera [EXEMPLE]", "es": "Inscripciones abiertas en la cantera [EJEMPLO]"},
+   "excerpt": {"ca": "Exemple de notícia sobre inscripcions: categories, com apuntar-se i a qui adreçar-se per resoldre dubtes.", "es": "Ejemplo de noticia sobre inscripciones: categorías, cómo apuntarse y a quién dirigirse para resolver dudas."}},
+  {"id": 3, "date": "2026-10-03", "image": "",
+   "tag": {"ca": "Club", "es": "Club"},
+   "title": {"ca": "Nou patrocinador al club [EXEMPLE]", "es": "Nuevo patrocinador en el club [EJEMPLO]"},
+   "excerpt": {"ca": "Exemple de notícia per presentar un patrocinador, agrair-li el suport i mostrar la seva col·laboració.", "es": "Ejemplo de noticia para presentar a un patrocinador, agradecerle su apoyo y mostrar su colaboración."}},
+  {"id": 4, "date": "2026-09-28", "image": "",
+   "tag": {"ca": "Esdeveniments", "es": "Eventos"},
+   "title": {"ca": "Activitat del club al poble [EXEMPLE]", "es": "Actividad del club en el pueblo [EJEMPLO]"},
+   "excerpt": {"ca": "Exemple de notícia per anunciar una trobada, una festa o una jornada oberta amb famílies i socis.", "es": "Ejemplo de noticia para anunciar un encuentro, una fiesta o una jornada abierta con familias y socios."}}
+]

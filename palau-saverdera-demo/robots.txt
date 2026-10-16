@@ -1,0 +1,3 @@
+# Demo: que los buscadores no la indexen. Borrar esta regla en la web definitiva.
+User-agent: *
+Disallow: /
